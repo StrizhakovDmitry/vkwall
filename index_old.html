@@ -1,0 +1,67 @@
+<?php
+require_once('library.php');
+ini_set("display_errors",1);
+error_reporting(E_ALL);
+$library = new library;
+$library->bootstrap();
+
+
+
+?>
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>vknews</title>
+		<meta name="description" content="">
+		<meta name="author" content="Merk">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+	</head>
+	<?php
+	require_once('library.php');
+	ini_set("display_errors",1);
+	error_reporting(E_ALL);
+	?>
+
+	<body>
+		<a id="newsSrc" href="https://oauth.vk.com/authorize?client_id=5015617&redirect_uri=http://merk46.ru/vknews/index.html&display=page&scope=notes&v=5.35">Получение code</a>
+		<a href="http://merk46.ru/vknews/">Сбросить GET</a>
+
+		<?php
+		if (isset($_GET["code"])) {
+			$library = new library;
+			$token = $library->get_access_token_attr(5015617,'EqMZZhD4CntAte8jlTGO','http://merk46.ru/vknews/index.html',$_GET["code"]);
+			$vk_api_method='wall.get';
+			$parametrs = array (
+			'offset'=>0,
+			'count'=>20,
+			'version'=>5.35,
+						);
+			
+			
+			
+			
+			$vk_response = $library->get_api_reply($vk_api_method,$parametrs,$token->access_token);
+			//$vk_response = $library->get_api_reply($vk_api_method,$parametrs);
+
+			$posts = $library->jsonGetWallToHtml($vk_response);
+			echo $library->posts;
+		}
+
+
+
+		?>
+
+<script type="text/jscript">
+	
+	
+	
+</script>
+</body>
+
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+	<head>
+			<title>TestAjaxPage</title>
+		    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		
+		
+	</head>
+	<body>
+		<script type="text/javascript">
+		/*$.ajax({
+			url:"testAjaxPServer.php",
+			dataType: "json",
+			jsonp: "callback",
+			success: function( response ) {console.log( response )}
+			})
+		*/
+		function addScript(src) {
+		  var elem = document.createElement("script");
+		  elem.src = src;
+		  document.head.appendChild(elem);
+		}
+		
+		var a = function(){return (addScript('/vknews/testAjaxPServer.php'))};
+				
+		alert(a);
+		
+		
+		
+		
+		
+		
+		
+		</script>
+		
+		
+		
+		
+		
+	</body>
+	
+	
+	
+	
+	
+</html>

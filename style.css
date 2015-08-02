@@ -1,0 +1,28 @@
+.avatar {
+	width: 50px;
+	float: left;
+}
+
+.container {
+	width: 500px; /* Ширина макета */
+	margin: 15px auto; /* Выравнивание по центру */
+	min-height: 50px;
+	border-top: 1px solid #f1f1f1;
+}
+
+.content {
+
+	margin-left: 55px; /* Отступ на ширину левой и правой колонки*/
+}
+.ownerName {
+	font-weight: bold;
+}
+a {
+	color: #2b587a;
+	cursor: pointer;
+	text-decoration: none;
+}
+a:hover
+{
+	text-decoration: underline;
+}
