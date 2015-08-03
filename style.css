@@ -1,18 +1,33 @@
+.linkContainer
+{
+	margin-top: 10px;
+	padding-right:5px;
+}
+.linkImageDiv
+{
+	width:155px;
+	float:left;
+	min-height:10px;
+}
+.LinkTextDiv
+{
+	min-height:10px;
+}
 .avatar {
 	width: 50px;
 	float: left;
 }
 
 .container {
-	width: 500px; /* Ширина макета */
-	margin: 15px auto; /* Выравнивание по центру */
+	width: 500px;
+	margin: 15px auto; 
 	min-height: 50px;
 	border-top: 1px solid #f1f1f1;
 }
 
 .content {
 
-	margin-left: 55px; /* Отступ на ширину левой и правой колонки*/
+	margin-left: 55px; 
 }
 .ownerName {
 	font-weight: bold;
@@ -25,4 +40,12 @@ a {
 a:hover
 {
 	text-decoration: underline;
+}
+.linkTitle
+{
+	font-weight: bold;
+}
+
+.attachLinkContainer{
+	margin-top:10px;
 }
