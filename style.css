@@ -1,3 +1,11 @@
+.linkImage
+{
+width:150px;
+	
+}
+
+
+
 .wallСontainer
 {
 	width: 500px;
@@ -11,8 +19,9 @@
 }
 .linkImageDiv
 {
-	z-index:1;
-	width:155px;
+	width:160px;
+	display: inline-block;
+	//width:155px;
 	float:left;
 
 }
