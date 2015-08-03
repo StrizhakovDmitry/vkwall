@@ -10,7 +10,7 @@ class library {
 	public $postsQuantity = 50; //количество постов со стены
 	public $offset = 0; //с какого поста наичнать 
 	const CLIENT_ID = 5015617; //ID приложение 
-	const CLIENT_SECRET = 'EqMZZhD4CntAte8jlTGO'; //секретный код приложения, в целях безопасности убрал из кода
+	const CLIENT_SECRET = '*'; //секретный код приложения, в целях безопасности убрал из кода
 	const PROFILE_VK_PATH = 'https://vk.com/id'; 
 	public $transArr = array(); 
 	public $obj_profiles;
