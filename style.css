@@ -1,3 +1,9 @@
+.wallСontainer
+{
+	width: 500px;
+	margin:0 auto;
+	
+}
 .linkContainer
 {
 	margin-top: 10px;
@@ -5,13 +11,14 @@
 }
 .linkImageDiv
 {
+	z-index:1;
 	width:155px;
 	float:left;
-	min-height:10px;
+
 }
 .LinkTextDiv
 {
-	min-height:10px;
+	
 }
 .avatar {
 	width: 50px;
@@ -19,6 +26,7 @@
 }
 
 .container {
+	display: inline-block;
 	width: 500px;
 	margin: 15px auto; 
 	min-height: 50px;
